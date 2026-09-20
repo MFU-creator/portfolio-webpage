@@ -11,7 +11,9 @@
   --color-accent-hover: #2c9b51;
   --color-border: #e5e7eb;
 
-  --font-sans: "Open Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sans:
+    "Open Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
 
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -45,7 +47,9 @@ html[data-theme="dark"] {
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -79,12 +83,30 @@ html[data-theme="dark"] {
 }
 
 @keyframes dotSequence {
-  0%    { transform: scale(1);   opacity: 1; }
-  20%   { transform: scale(2.2); opacity: 0.5; }
-  35%   { transform: scale(1);   opacity: 1; }
-  55%   { transform: scale(2.2); opacity: 0.5; }
-  65%   { transform: scale(1);   opacity: 1; }
-  100%  { transform: scale(180); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(2.2);
+    opacity: 0.5;
+  }
+  35% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  55% {
+    transform: scale(2.2);
+    opacity: 0.5;
+  }
+  65% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(180);
+    opacity: 0;
+  }
 }
 
 @keyframes loaderFade {
@@ -269,7 +291,9 @@ a:focus-visible {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: color var(--transition-fast), border-color var(--transition-fast);
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast);
 }
 
 .theme-toggle:hover {
@@ -335,7 +359,7 @@ main {
 }
 
 .section::before {
-  content: '';
+  content: "";
   display: block;
   width: 60px;
   height: 3px;
@@ -344,7 +368,8 @@ main {
   border-radius: 2px;
 }
 
-#writing-heading, #freelance-heading {
+#writing-heading,
+#freelance-heading {
   margin-bottom: 0px;
 }
 .section__title {
@@ -393,7 +418,9 @@ main {
 .hero__title-wrapper {
   position: relative;
   display: inline-block;
+  font-size: clamp(2.8rem, 5vw, 4rem);
   font-weight: 800;
+  line-height: 1.05;
   clip-path: inset(0 100% 0 0);
   animation: nameReveal 0.8s cubic-bezier(0.65, 0, 0.35, 1) 0.3s forwards;
 }
@@ -408,7 +435,7 @@ main {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 6.5ch;
+  width: 10ch;
   height: 4px;
   background: var(--color-accent);
   border-radius: 2px;
@@ -512,7 +539,6 @@ main {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0px);
@@ -548,7 +574,9 @@ main {
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.5;
-  transition: opacity var(--transition-base), filter var(--transition-base);
+  transition:
+    opacity var(--transition-base),
+    filter var(--transition-base);
 }
 
 .company-logo:hover {
@@ -787,7 +815,9 @@ html[data-theme="dark"] .company-logo:hover {
 
 .project-card__links a {
   color: var(--color-text-muted);
-  transition: color var(--transition-fast), transform var(--transition-fast);
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
   display: flex;
   align-items: center;
   position: relative;
@@ -808,7 +838,9 @@ html[data-theme="dark"] .company-logo:hover {
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.15s ease, transform 0.15s ease;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
 }
 
 .project-link:hover::after {
@@ -919,7 +951,7 @@ html[data-theme="dark"] .company-logo:hover {
 }
 
 .writing-item__title a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -942,7 +974,9 @@ html[data-theme="dark"] .company-logo:hover {
   height: 16px;
   opacity: 0;
   transform: translateX(-4px);
-  transition: opacity var(--transition-fast), transform var(--transition-fast);
+  transition:
+    opacity var(--transition-fast),
+    transform var(--transition-fast);
   flex-shrink: 0;
 }
 
@@ -1002,7 +1036,9 @@ html[data-theme="dark"] .company-logo:hover {
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
-  transition: color var(--transition-fast), background-color var(--transition-fast);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
   flex-shrink: 0;
 }
 
@@ -1031,7 +1067,9 @@ html[data-theme="dark"] .company-logo:hover {
   white-space: nowrap;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.15s ease, transform 0.15s ease;
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
 }
 
 .connect-icon:hover::before {
@@ -1113,8 +1151,14 @@ html[data-theme="dark"] .company-logo:hover {
 }
 
 @keyframes popIn {
-  0% { transform: scale(0.5); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Skills section */
@@ -1150,7 +1194,9 @@ html[data-theme="dark"] .company-logo:hover {
   padding: var(--space-xs) var(--space-md);
   border-radius: 100px;
   font-weight: 500;
-  transition: border-color var(--transition-fast), color var(--transition-fast);
+  transition:
+    border-color var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .skills-tags li:hover {
@@ -1194,8 +1240,13 @@ html[data-theme="dark"] .company-logo:hover {
 }
 
 @keyframes shimmer {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 1; }
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 /* Mobile nav backdrop */
@@ -1235,7 +1286,7 @@ html[data-theme="dark"] .company-logo:hover {
   .nav {
     padding: var(--space-md) var(--space-lg);
   }
-  
+
   .nav__toggle {
     display: flex;
   }
@@ -1249,25 +1300,32 @@ html[data-theme="dark"] .company-logo:hover {
     height: 100vh;
     background: var(--color-bg);
     flex-direction: column;
-    padding: var(--space-4xl) var(--space-xl);
-    gap: var(--space-xl);
+    align-items: flex-start;
+    padding: 4.5rem var(--space-xl) 1.25rem;
+    gap: 0.5rem;
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
     z-index: 99;
   }
-  
+
   .nav__list.active {
     right: 0;
   }
-  
+
   .nav__list li {
     width: 100%;
   }
-  
+
   .nav__list a {
     display: block;
-    padding: var(--space-sm) 0;
+    padding: 0.2rem 0;
     font-size: 1.125rem;
+    line-height: 1.4;
+  }
+
+  .nav__list .theme-toggle {
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
   }
 
   .section {
@@ -1284,6 +1342,5 @@ html[data-theme="dark"] .company-logo:hover {
 
   .hero__companies-logos {
     gap: var(--space-2xl);
-
   }
 }
