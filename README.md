@@ -1,1 +1,1 @@
-MFU creator portfolio website: mfucrator.com
+MFU creator portfolio website: [mfucreator.com](https://mfucreator.com)
