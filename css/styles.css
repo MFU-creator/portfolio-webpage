@@ -201,24 +201,32 @@ a:focus-visible {
 }
 
 .nav__logo {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
   flex-shrink: 0;
-  height: 2.5rem;
+  line-height: 1;
+  color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .nav__logo:hover {
   color: var(--color-text);
 }
 
-.nav__logo-image {
-  display: block;
-  height: 100%;
-  width: auto;
-  max-height: 2.5rem;
-  object-fit: contain;
-  border-radius: 8px;
+.nav__logo-mfu {
+  color: var(--color-accent);
+  font-size: 1.2em;
+}
+
+.nav__logo-creator {
+  color: var(--color-text);
+  align-self: flex-end;
 }
 
 .nav__list {
