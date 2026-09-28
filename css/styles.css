@@ -621,6 +621,15 @@ main {
   margin: auto 0 0;
 }
 
+.bento-item__description-list {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin: auto 0 0;
+}
+
 @media (max-width: 768px) {
   .bento-grid {
     grid-template-columns: 1fr;
