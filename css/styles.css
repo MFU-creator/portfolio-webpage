@@ -328,17 +328,6 @@ html[data-theme="dark"] .theme-toggle__icon--moon {
   display: none;
 }
 
-.store .external-icon {
-  stroke: var(--color-accent);
-  opacity: 1;
-}
-
-.external-icon {
-  width: 12px;
-  height: 12px;
-  opacity: 0.6;
-}
-
 main {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -477,18 +466,6 @@ main {
   color: var(--color-bg) !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.hero__cta--secondary {
-  background: transparent;
-  color: var(--color-text) !important;
-  border: 2px solid var(--color-border);
-}
-
-.hero__cta--secondary:hover {
-  border-color: var(--color-accent);
-  color: var(--color-text) !important;
-  transform: translateY(-2px);
 }
 
 .hero__illustration {
@@ -784,15 +761,6 @@ main {
   height: 24px;
   background: var(--color-border);
   flex-shrink: 0;
-}
-
-.connect-support {
-  margin-top: var(--space-md);
-  display: flex;
-}
-
-.connect-icon__label {
-  white-space: nowrap;
 }
 
 .copy-email {
