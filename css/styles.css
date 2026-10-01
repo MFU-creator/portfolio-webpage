@@ -219,6 +219,14 @@ a:focus-visible {
   color: var(--color-text);
 }
 
+.nav__logo-image {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 .nav__logo-mfu {
   color: var(--color-accent);
   font-size: 1.2em;
