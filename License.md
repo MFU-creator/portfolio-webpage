@@ -1,3 +1,19 @@
+## PORTFOLIO LICENSE NOTICE
+
+Copyright (c) 2026 MFU creator. All Rights Reserved.
+
+This repository and website contain proprietary code, unique design elements, 
+and personal content created by MFU creator. 
+
+UNAUTHORIZED COPYING, REPRODUCTION, MODIFICATION, OR DISTRIBUTION OF THIS 
+WORK, OR ANY PORTION OF IT, IS STRICTLY PROHIBITED.
+
+--------------------------------------------------------------------
+THIRD-PARTY COMPONENTS & BASE CODE
+--------------------------------------------------------------------
+Portions of this project are derived from open-source work used under 
+the MIT License:
+
 MIT License
 
 Copyright (c) 2017 GaNeShKuMaRm
