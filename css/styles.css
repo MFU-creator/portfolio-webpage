@@ -284,12 +284,6 @@ a:focus-visible {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-.store {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
 /* Theme toggle */
 .theme-toggle {
   background: none;
@@ -795,26 +789,6 @@ main {
 .connect-support {
   margin-top: var(--space-md);
   display: flex;
-}
-
-.connect-icon--support {
-  width: auto;
-  padding: 0 var(--space-md);
-  gap: 6px;
-  border: 1.5px solid var(--color-accent);
-  color: var(--color-accent);
-  font-size: 0.8125rem;
-  font-weight: 600;
-}
-
-.connect-icon--support:hover {
-  background: var(--color-accent);
-  color: #fff;
-}
-
-.connect-icon--support svg {
-  width: 16px;
-  height: 16px;
 }
 
 .connect-icon__label {
