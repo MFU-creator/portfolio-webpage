@@ -508,7 +508,7 @@ main {
   max-width: 330px;
   height: auto;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 75px;
   /* animation: float 6s ease-in-out infinite; */
 }
 
