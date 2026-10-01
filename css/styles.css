@@ -334,19 +334,6 @@ html[data-theme="dark"] .theme-toggle__icon--moon {
   display: none;
 }
 
-/* Avatar swap for dark mode */
-.hero__avatar--dark {
-  display: none;
-}
-
-html[data-theme="dark"] .hero__avatar--light {
-  display: none;
-}
-
-html[data-theme="dark"] .hero__avatar--dark {
-  display: block;
-}
-
 .store .external-icon {
   stroke: var(--color-accent);
   opacity: 1;
@@ -401,7 +388,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 400px;
   gap: var(--space-4xl);
-  align-items: center;
+  align-items: start;
+  padding-top: 20px;
 }
 
 .hero__content {
@@ -511,7 +499,7 @@ main {
 
 .hero__illustration {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
