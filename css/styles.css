@@ -560,6 +560,13 @@ main {
   grid-row: span 2;
 }
 
+.bento-item__header {
+  --qr-code-space: min(42%, 10rem);
+  position: relative;
+  padding-right: var(--qr-code-space);
+  min-width: 0;
+}
+
 .bento-item__year {
   font-size: 0.8125rem;
   color: var(--color-text-muted);
@@ -600,20 +607,23 @@ main {
 
 .bento-item__image {
   display: block;
-  width: 128px;
-  height: 128px;
-  border-radius: 32px;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
   object-fit: cover;
+  margin-top: -6px;
+  margin-bottom: 6px;
 }
 
 .bento-item__qr-code {
   position: absolute;
-  top: var(--space-xl);
-  right: var(--space-xl);
-  width: 190px;
-  height: 190px;
+  top: 0;
+  right: 0;
+  width: var(--qr-code-space);
+  height: auto;
   border-radius: 12px;
   object-fit: contain;
+  margin: 0;
 }
 
 html[data-theme="dark"] .bento-item__qr-code {
@@ -633,11 +643,8 @@ html[data-theme="dark"] .bento-item__qr-code {
     grid-row: span 1;
   }
 
-  .bento-item__qr-code {
-    position: static;
-    width: 128px;
-    height: 128px;
-    margin: var(--space-md) 0 0 auto;
+  .bento-item__header {
+    --qr-code-space: min(50%, 10rem);
   }
 }
 
