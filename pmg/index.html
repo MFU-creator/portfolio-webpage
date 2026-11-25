@@ -14,9 +14,9 @@
           /iPhone|iPad|iPod/i.test(userAgent) ||
           (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
         var destination = isIOS
-          ? "itms-apps://itunes.apple.com/app/id6832030088"
+          ? "https://apps.apple.com/app/game/id6832030088"
           : /Android/i.test(userAgent)
-            ? "market://details?id=com.mfu.plusminusgame"
+            ? "intent://details?id=com.mfu.plusminusgame#Intent;scheme=market;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.mfu.plusminusgame;end"
             : "https://mfucreator.com";
 
         window.location.replace(destination);
